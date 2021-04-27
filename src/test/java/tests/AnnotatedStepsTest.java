@@ -1,12 +1,13 @@
-package tests.annotationSteps;
+package tests;
 
 import org.junit.jupiter.api.Test;
+import steps.WebSteps;
 
 public class AnnotatedStepsTest {
     private final static String REPOSITORY = "eroshenkoam/allure-example";
     private final static int ISSUE_NUMBER = 68;
 
-    private final tests.annotationSteps.WebSteps steps = new tests.annotationSteps.WebSteps();
+    private final WebSteps steps = new WebSteps();
 
     @Test
     public void testSearch() {
